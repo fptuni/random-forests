@@ -117,7 +117,7 @@ data_line = list(av_row)
 # Code draw line
 plt.plot(name_columns_graph, data_line, color='red', marker='o')
 plt.xticks(rotation=90)
-plt.title('Predict using ' + name_predict, fontsize=14)
+# plt.title('Predict using ' + name_predict, fontsize=14)
 plt.xlabel('Features', fontsize=14)
 plt.ylabel('Accuracy', fontsize=14)
 plt.grid(False)
