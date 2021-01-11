@@ -115,16 +115,18 @@ df1.to_csv('result_'+name_result+'.csv')
 # data for drawing line
 data_line = list(av_row)
 # Code draw line
+plt.xlabel('Features', fontsize=25)
+plt.ylabel('Accuracy', fontsize=25)
+plt.tick_params(axis="y", labelsize=25)
 plt.plot(name_columns_graph, data_line, color='red', marker='o')
 plt.xticks(rotation=90)
-# plt.title('Predict using ' + name_predict, fontsize=14)
-plt.xlabel('Features', fontsize=14)
-plt.ylabel('Accuracy', fontsize=14)
 plt.grid(False)
 # Code draw Boxplot
+plt.rc('ytick', labelsize=20)
 df_new.plot.box(grid=False, rot=90)
-plt.xlabel('Features', fontsize=14)
-plt.ylabel('Accuracy', fontsize=14)
+plt.xlabel('Features', fontsize=25)
+plt.ylabel('Accuracy', fontsize=25)
+
 
 plt.show()
 
